@@ -31,14 +31,14 @@ if %choice%==3 goto gaming
 if %choice%==4 exit
 
 :gamedev
-start "" "C:\Program Files\Unity Hub\Unity Hub.exe"
-start "" "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" "https://chatgpt.com/" "https://assetstore.unity.com/" "https://www.youtube.com/"
+start "" "Unity Hub.exe"
+start "" "brave.exe" "https://chatgpt.com/" "https://assetstore.unity.com/" "https://www.youtube.com/"
 
 goto start
 
 :cyberstuff
-start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\VMware\VMware Workstation Pro.lnk"
-start "" "C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" "https://chatgpt.com/"
+start "" "VMware Workstation Pro.lnk"
+start "" "brave.exe" "https://chatgpt.com/"
 
 goto start
 
@@ -51,10 +51,11 @@ echo 2. Epic Games
 set /p c=Choose:
 
 if %c%==1 (
-	start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Steam\Steam.lnk"
+	start "" "Steam.lnk"
 ) 
 if %c%==2 (
-	start "" "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Epic Games Launcher.lnk"
+	start "" "Epic Games Launcher.lnk"
 )
+
 
 goto start
